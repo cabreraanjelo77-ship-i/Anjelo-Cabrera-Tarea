@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 2 - Empleados</title>
-    <link rel="stylesheet" href="static/estilos.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PAGINA2 - Galería</title>
+<link rel="stylesheet" href="static/estilos.css">
 </head>
 <body>
+  <header class="site-header">
+    <h1>PÁGINA 2 — Galería</h1>
+  </header>
 
-    <header>
-        <h1 class="titulo-animado">Nuestro Equipo</h1>
-    </header>
+  <main class="container">
+    <p class="lead">Galería animada. Pasa el cursor sobre cada imagen para ver la animación y el cambio de imagen.</p>
 
-    <main>
-        <section class="empleados">
-            <div class="empleado">
-                <img src="Gerente.jpg" alt="Empleado 1">
-                <p><strong>Anjelo Cabrera</strong> - Gerente General</p>
-            </div>
-            <div class="empleado">
-                <img src="Encargada de ventas.jpg" alt="Empleado 2">
-                <p><strong>Ana Gómez</strong> - Encargada de Ventas</p>
-            </div>
-            <div class="empleado">
-                <img src="tecnico informatico.jpg" alt="Empleado 3">
-                <p><strong>Pedro Martinez</strong> - Técnico Informático</p>
-            </div>
-        </section>
+    <div class="buttons-row">
+      <a class="nav-btn" href="index.html">Ir a PÁGINA1</a>
+      <a class="nav-btn" href="pagina3.html">Ir a PÁGINA3</a>
+    </div>
 
-        <section class="botones">
-            <a href="index.html" class="boton-link">Volver a Inicio</a>
-            <a href="pagina1.html" class="boton-link">Ir a Página 1</a>
-        </section>
-    </main>
+    <section class="gallery-section">
+      <div id="mensaje-welcome-2" class="small-title"></div>
+      <div id="edad-respuesta" class="small-sub"></div>
 
-    <footer>
-        <p>© 2025 - Derechos de autor: <strong>Anjelo Cabrera</strong></p>
-    </footer>
+      <div class="gallery-grid">
+        <figure class="g-item g-rotate">
+          <img src="https://picsum.photos/id/1015/600/400" data-alt-src="https://picsum.photos/id/1016/600/400" alt="Imagen 1">
+          <figcaption>Rotar</figcaption>
+        </figure>
 
+        <figure class="g-item g-scale">
+          <img src="https://picsum.photos/id/1025/600/400" data-alt-src="https://picsum.photos/id/1027/600/400" alt="Imagen 2">
+          <figcaption>Escalar</figcaption>
+        </figure>
+
+        <figure class="g-item g-float">
+          <img src="https://picsum.photos/id/1035/600/400" data-alt-src="https://picsum.photos/id/1039/600/400" alt="Imagen 3">
+          <figcaption>Flotar</figcaption>
+        </figure>
+
+        <figure class="g-item g-pulse">
+          <img src="https://picsum.photos/id/1045/600/400" data-alt-src="https://picsum.photos/id/1047/600/400" alt="Imagen 4">
+          <figcaption>Pulsar</figcaption>
+        </figure>
+
+        <figure class="g-item g-slide">
+          <img src="https://picsum.photos/id/1055/600/400" data-alt-src="https://picsum.photos/id/1060/600/400" alt="Imagen 5">
+          <figcaption>Deslizar</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 - Anjelo Cabrera</p>
+  </footer>
+
+<script src="static/script.js"></script>
 </body>
 </html>

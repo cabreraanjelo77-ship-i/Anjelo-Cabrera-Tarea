@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PAGINA3 - Operaciones</title>
+<link rel="stylesheet" href="static/estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>PÁGINA 3 — Operaciones</h1>
+  </header>
+
+  <main class="container">
+    <p class="lead">Tabla con 3 columnas y 4 filas. Encabezados animados. Presiona CALCULAR para ingresar valores.</p>
+
+    <div class="buttons-row">
+      <a class="nav-btn" href="index.html">Ir a PÁGINA1</a>
+      <a class="nav-btn" href="pagina2.html">Ir a PÁGINA2</a>
+    </div>
+
+    <table class="op-table" aria-describedby="table-desc">
+      <caption id="table-desc" style="text-align:left; padding:8px 0; font-weight:600">Operaciones</caption>
+      <thead>
+        <tr>
+          <th class="anim-header">OPERACIÓN</th>
+          <th class="anim-header">DESCRIPCIÓN</th>
+          <th class="anim-header">BOTONES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SUMA</td>
+          <td>Suma los 2 números ingresados</td>
+          <td>
+            <button class="calc-button" data-action="sumar">CALCULAR</button>
+            <span class="result-text" aria-live="polite">—</span>
+          </td>
+        </tr>
+        <tr>
+          <td>DIVISIÓN</td>
+          <td>Divide el 1º número entre el 2º (verifica división por 0)</td>
+          <td>
+            <button class="calc-button" data-action="dividir">CALCULAR</button>
+            <span class="result-text" aria-live="polite">—</span>
+          </td>
+        </tr>
+        <tr>
+          <td>PROMEDIO</td>
+          <td>Promedia los 2 números ingresados</td>
+          <td>
+            <button class="calc-button" data-action="promediar">CALCULAR</button>
+            <span class="result-text" aria-live="polite">—</span>
+          </td>
+        </tr>
+        <tr>
+          <td>RESTA</td>
+          <td>Resta los 2 números ingresados (primero - segundo)</td>
+          <td>
+            <button class="calc-button" data-action="restar">CALCULAR</button>
+            <span class="result-text" aria-live="polite">—</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 - Anjelo Cabrera</p>
+  </footer>
+
+<script src="static/script.js"></script>
+</body>
+</html>
